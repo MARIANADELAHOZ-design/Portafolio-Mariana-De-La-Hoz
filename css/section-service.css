@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: "Parkinsans", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 69px 0;}
+
+/* section service */
+.service {
+    max-width: 1441px;
+    max-height: 929px;
+    padding: 117px 71px;
+    background-image: url(../Decoraciones/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 50px;
+}
+
+.service__content-sv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 123px;
+}
+
+.content-sv__info {
+    display: flex;
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-self: stretch;
+}
+
+.info__title-service {
+    color: var(--Gray-25, #FCFCFD);
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+}
+
+.servicios {
+    color: #F57920;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -0.96px;
+}
+
+.info__description-service {
+    width: 50%;
+    max-width: 576px;
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.36px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    align-self: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    border-radius: 42px;
+    border: 2px solid #FFF;
+    background: rgba(104, 104, 104, 0.20);
+}
+
+.card__top {
+    display: flex;
+    padding: 32px 172px 32px 46px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.modelado__title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+}
+
+.card__decoration {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    align-items: flex-start;
+    background: rgba(249, 250, 251, 0.30);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.content-slide {
+    display: flex;
+    width: 100%;
+    height: 92px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.content__figure-modelado {
+    width: 100%; /* Se ajusta al ancho completo del contenedor */
+    height: 250px; /* Fijamos la altura para evitar el desbordamiento */
+    overflow: hidden; /* Ocultamos cualquier cosa que se salga del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px; /* Redondeamos las esquinas */
+}
+
+.content__imgsv {
+    width: 100%; /* Escala la imagen al 100% del contenedor */
+    height: 100%; /* Mantiene la imagen dentro del área */
+    object-fit: cover; /* Escala la imagen sin distorsionarla */
+    object-position: center; /* Centra la imagen */
+}
+
+
+@media (max-width: 1200px) {
+    .service {
+    padding: 80px 40px;
+    }
+
+    .content-sv__info {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    }
+
+    .info__title-service,
+    .servicios {
+    font-size: 48px;
+    }
+
+    .info__description-service {
+    width: 100%;
+    max-width: 576px;
+    text-align: center;
+    }
+
+    .cards {
+    gap: 20px;
+    }
+
+    .card {
+    width: 100%;
+    max-width: 415px;
+    }
+}
+
+@media (max-width: 768px) {
+    .service {
+    padding: 60px 20px;
+    }
+
+    .info__title-service,
+    .servicios {
+    font-size: 36px;
+    }
+
+    .info__description-service {
+    font-size: 20px;
+    }
+
+    .card {
+    height: auto;
+    }
+
+    .card__top {
+    padding: 24px 32px;
+    }
+
+    .modelado__title {
+    font-size: 24px;
+    }
+
+    .content__imgsv {
+    height: 250px;
+    }
+}

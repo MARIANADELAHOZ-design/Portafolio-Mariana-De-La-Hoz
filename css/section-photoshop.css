@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Parkinsans", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 69px 0;
+}
+
+/* Título y estructura general */
+.section__photoshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.section__photoshop-modelado {
+    display: flex;
+    justify-content: center;
+    padding: 64px 10%;
+}
+
+.section__main-photoshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.section-photoshop__title {
+    color: var(--Gray-700, #344054);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+.highlight {
+    color: #FD853A;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+/* Imágenes de Photoshop */
+.section__content-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.content-card__image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__poster,
+.card__ascendbong,
+.card__cerveza {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Información de Photoshop */
+.section__info-photoshop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 20px;
+}
+
+.content-photoshop__paragraph {
+    color: var(--Gray-700, #344054);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Botón de Photoshop */
+.photoshop-secundary__botom {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: var(--Orange-400, #FD853A);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.photoshop-secundary__botom:hover {
+    background-color: #b2602d ;
+    transform: scale(1.1);
+    }
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .section__photoshop-modelado {
+        padding: 64px 5%;
+    }
+
+    .section-photoshop__title {
+        font-size: 40px;
+    }
+
+    .highlight {
+        font-size: 40px;
+    }
+
+    .section__content-card {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .content-card__image {
+        max-width: 100%;
+    }
+
+    .photoshop-secundary__botom {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__photoshop-modelado {
+        padding: 32px 5%;
+    }
+
+    .section-photoshop__title {
+        font-size: 30px;
+    }
+
+    .highlight {
+        font-size: 30px;
+    }
+
+    .content-photoshop__paragraph {
+        font-size: 16px;
+    }
+
+    .photoshop-secundary__botom {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}

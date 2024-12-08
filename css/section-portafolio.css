@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: "Parkinsans", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 69px 0;
+}
+
+/* General container */
+.section__portafolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+    background: #FFD6B5;
+}
+
+.section__portafolio-modelado {
+    text-align: center;
+}
+
+.section-portafolio__title {
+    color: #FD853A;
+    font-size: 2.5rem;
+    font-weight: 900;
+    letter-spacing: -0.72px;
+}
+
+/* Contenedor principal de las tarjetas */
+.section__portafolio-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Tarjetas individuales */
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; 
+    gap: 20px;
+    text-align: center;
+}
+
+.content__img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.content__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.portafolio-secundary__ilustraciones,
+.portafolio-secundary__modelado,
+.portafolio-secundary__apocalipsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #FD853A;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    margin-top: -90px;
+    margin-right: -220px;
+}
+
+.modelado__svg {
+    transform: rotate(-45deg);
+    transition: 0.3s ease;
+}
+
+.modelado__svg:hover {
+    transform: scale(1.1);
+    }
+
+.content-portafolio__text {
+    display: flex;
+    padding: 15px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 24px;
+    background: var(--Gray-100, #F2F4F7);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .section__portafolio-card {
+        gap: 15px;
+    }
+
+    .card__content {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .content__img img {
+        max-width: 100%;
+    }
+}
+
+

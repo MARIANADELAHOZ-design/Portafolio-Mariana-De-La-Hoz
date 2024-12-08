@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+body {
+    font-family: "Parkinsans", sans-serif;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 69px 0;}
+
+/* Título y estructura general */
+.section__modelado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.section__content-modelado {
+    display: flex;
+    padding: 64px 10%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.section__main-modelado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.section-modelado__title {
+    color: var(--Gray-700, #344054);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+.dmax {
+    color: #F57920;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: -0.72px;
+    text-align: center;
+}
+
+/* Imágenes de modelado 3D */
+.section__content-card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.content-card__image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__arma, .card__pum, .card__room {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+/* Información de modelado 3D */
+.section__info-modelado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 20px;
+}
+
+.content-modelado__paragraph {
+    color: var(--Gray-700, #344054);
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Botón de modelado 3D */
+.secundary__botom {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: var(--Orange-400, #FD853A);
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.secundary__botom:hover {
+    background-color: #b2602d ;
+    transform: scale(1.1);
+    }
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1200px) {
+    .section__content-modelado {
+        padding: 64px 5%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .section-modelado__title {
+        font-size: 40px;
+    }
+
+    .dmax {
+        font-size: 40px;
+    }
+
+    .content-card__image {
+        max-width: 100%;
+    }
+
+    .secundary__botom {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section__content-modelado {
+        padding: 32px 5%;
+    }
+
+    .section-modelado__title {
+        font-size: 30px;
+    }
+
+    .dmax {
+        font-size: 30px;
+    }
+
+    .content-card__image {
+        max-width: 100%;
+    }
+
+    .secundary__botom {
+        padding: 15px 25px;
+        font-size: 16px;
+    }
+}
+
